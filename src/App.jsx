@@ -1,10 +1,9 @@
-import './App.css'
+import Navbar from './components/navbar/Navbar'
 
-function App() {
-
+const App = () => {
   return (
     <>
-      <h1>Netflix</h1>
+      <Navbar />
     </>
   )
 }
