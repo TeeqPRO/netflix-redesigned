@@ -1,0 +1,32 @@
+:root {
+    --background: #0d0c11;
+
+    /* Primary colors */
+    --primary-black: #000;
+    --primary-red: #E50914;
+    --primary-white: #fff;
+
+    /* Secondary colors */
+    --secondary-red-100: #EB3942;
+    --secondary-red-200: #C11119; 
+    --secondary-red-300: #F50723;
+
+    --secondary-blue-100: #0071EB;
+    --secondary-blue-200: #448EF4;
+    --secondary-blue-300: #54b9c5;
+
+    --secondary-green: #46d369;
+
+    /* Other */
+    --gray-100: #343436;
+    --gray-200: #69686d;
+    --black-100: #17161b;
+    --gold-100: #f1c02d;
+
+    /* Ages */
+
+}
+
+body {
+    background-color: var(--background);
+}
