@@ -1,13 +1,10 @@
 import Navbar from './components/navbar/Navbar';
-import { assets } from "./public/assets.js";
+import { assets } from "./assets/assets.js";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <div>
-        <img src={assets.Logo} alt="Logo" className="logo"/>
-      </div>
     </>
   );
 }

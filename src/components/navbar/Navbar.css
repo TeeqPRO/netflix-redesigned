@@ -1,0 +1,142 @@
+.Navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    height: 122px;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.1);
+    z-index: 99999;
+}
+
+.Navbar-1 {
+    background-color: none;
+    width: 223px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navbar-1-Container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.Logo-Btn{
+    width: 111px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.Left-Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: fit-content;
+    margin-left: 47px;
+}
+
+.Right-Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: fit-content;
+    margin-right: 47px;
+}
+
+.Navbar-2 {
+    background-color: none;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+}
+
+.Navbar-2-Btn-Container {
+    display: flex;
+    width: 25%;
+    height: 100%;
+    background-color: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.Navbar-2-Btn-Container > .Text > a, .Navbar-2-Btn-Container > .Text > a:hover {
+    display: flex;
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.Navbar-2-Btn-Container > .Text > a:hover, .Navbar-2 > .selected > .Text > a {
+    opacity: 1;
+}
+
+.dot {
+    display: none;
+}
+
+.selected > .Text > .dot {
+    display: flex;
+    position: absolute;
+    margin-top: 55px;
+}
+
+.Navbar-3 {
+    display: flex;
+    flex-direction: row;
+    background-color: none;
+    width: 278px;
+}
+
+.Navbar-3 > .Navbar-3-Container {
+    display: flex;
+    background-color: none;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navbar-3 > .Navbar-3-Container > div > a > img {
+    width: 28px;
+    height: 28px;
+    margin-top: 8px;
+}
+
+.Navbar-4 {
+    background-color: none;
+    width: 166px;
+}
+
+.Navbar-4 > .Navbar-4-Container {
+    display: flex;
+    background-color: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Navbar-4 > .Navbar-4-Container > div > a > img {
+    margin-top: 8px;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+}
+
+/*If 1500px then make it smaller */
