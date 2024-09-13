@@ -1,24 +1,45 @@
-.Navbar {
+.Desktop-Navbar {
     display: flex;
     position: sticky;
     top: 0;
     margin: 0;
     width: 100%;
-    height: 122px;
+    height: fit-content;
     flex-direction: row;
     justify-content: space-between;
     box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.1);
     z-index: 99999;
+    padding: 0;
 }
 
-.Navbar-1 {
+.Desktop-Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 110px;
+}
+
+.Mobile-Navbar {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 110px;
+}
+
+.Desktop-Desktop-Navbar-1 {
     background-color: none;
     width: 223px;
     justify-content: center;
     align-items: center;
 }
 
-.Navbar-1-Container {
+.Desktop-Navbar-1-Container {
     display: flex;
     height: 100%;
     width: 100%;
@@ -31,10 +52,10 @@
 .Logo-Btn{
     width: 111px;
     height: 30px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 
-.Left-Navbar {
+.Left-Desktop-Navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -42,7 +63,7 @@
     margin-left: 47px;
 }
 
-.Right-Navbar {
+.Right-Desktop-Navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -50,14 +71,14 @@
     margin-right: 47px;
 }
 
-.Navbar-2 {
+.Desktop-Navbar-2 {
     background-color: none;
     width: 700px;
     display: flex;
     flex-direction: row;
 }
 
-.Navbar-2-Btn-Container {
+.Desktop-Navbar-2-Btn-Container {
     display: flex;
     width: 25%;
     height: 100%;
@@ -74,7 +95,7 @@
     height: fit-content;
 }
 
-.Navbar-2-Btn-Container > .Text > a, .Navbar-2-Btn-Container > .Text > a:hover {
+.Desktop-Navbar-2-Btn-Container > .Text > a, .Desktop-Navbar-2-Btn-Container > .Text > a:hover {
     display: flex;
     opacity: 0.5;
     transition: opacity 0.2s ease;
@@ -82,28 +103,30 @@
     color: white;
 }
 
-.Navbar-2-Btn-Container > .Text > a:hover, .Navbar-2 > .selected > .Text > a {
+.Desktop-Navbar-2-Btn-Container > .Text > a:hover, .Desktop-Navbar-2 > .selected > .Text > a {
     opacity: 1;
 }
 
 .dot {
     display: none;
+    position: absolute;
+    margin-top: 45px;
+    width: 12px;
+    height: 12px;
 }
 
 .selected > .Text > .dot {
     display: flex;
-    position: absolute;
-    margin-top: 55px;
 }
 
-.Navbar-3 {
+.Desktop-Navbar-3 {
     display: flex;
     flex-direction: row;
     background-color: none;
-    width: 278px;
+    width: 200px;
 }
 
-.Navbar-3 > .Navbar-3-Container {
+.Desktop-Navbar-3 > .Desktop-Navbar-3-Container {
     display: flex;
     background-color: none;
     width: 50%;
@@ -112,105 +135,127 @@
     align-items: center;
 }
 
-.Navbar-3 > .Navbar-3-Container > div > a > img {
+.Desktop-Navbar-3 > .Desktop-Navbar-3-Container > div > a > img {
     width: 28px;
     height: 28px;
     margin-top: 8px;
 }
 
-.Navbar-4 {
+.Desktop-Navbar-4 {
     background-color: none;
-    width: 166px;
+    justify-content: right;
+    width: 82px;
+    padding-right: 10px
 }
 
-.Navbar-4 > .Navbar-4-Container {
+.Desktop-Navbar-4 > .Desktop-Navbar-4-Container {
     display: flex;
     background-color: none;
     width: 100%;
     height: 100%;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
 
-.Navbar-4 > .Navbar-4-Container > div > a > img {
+.Desktop-Navbar-4 > .Desktop-Navbar-4-Container > div > a > img {
     margin-top: 8px;
     width: 45px;
     height: 45px;
     border-radius: 100%;
 }
 
-@media screen and (max-width: 1500px) {
-    .Navbar {
+@media screen and (max-width: 1350px) {
+    .Desktop-Navbar {
         height: 100px;
     }
 
-    .Navbar-1 {
+    .Desktop-Navbar-1 {
         width: 200px;
     }
 
-    .Navbar-2 {
+    .Desktop-Navbar-2 {
         width: 600px;
     }
 
-    .Navbar-3 {
+    .Desktop-Navbar-3 {
         width: 200px;
     }
 
-    .Navbar-4 {
-        width: 150px;
+    .Desktop-Navbar-4 {
+        width: 82px;
     }  
     
     .dot {
-        width: 15px;
-        height: 15  px;
+        width: 12px;
+        height: 12px;
     }
 }
 
-@media screen and (max-width: 1250px) {
-    .Navbar {
+@media screen and (max-width: 1200px) {
+    .Desktop-Navbar {
         height: 80px;
     }
 
-    .Navbar-1 {
+    .Desktop-Navbar-1 {
         width: 150px;
     }
 
-    .Navbar-2 {
+    .Desktop-Navbar-2 {
         width: 500px;
     }
 
-    .Navbar-3 {
+    .Desktop-Navbar-3 {
         width: 150px;
     }
 
-    .Navbar-4 {
-        width: 100px;
+    .Desktop-Navbar-4 {
+        width: 70px;
     }    
 
     .dot {
         width: 12px;
         height: 12px;
-        top: 0;
+        margin-top: 44px;
     }
 
     .Logo {
         width: 100px;
         height: 25px;
     }
+
+    .Desktop-Navbar-4 > .Desktop-Navbar-4-Container > div > a > img {
+        width: 40px;
+        height: 40px;
+    } 
 }
 
 @media screen and (max-width: 1050px) {
-    .Navbar {
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-left: 0px;
-        margin-right: 0px;
+    .Left-Desktop-Navbar {
+        margin-left: 25px;
     }
-    
+
+    .Right-Desktop-Navbar {
+        margin-right: 25px;
+    }
+
 }
 
-@media screen and (max-width: 1000px) {
-    .Navbar {
-        height: 70px;
+@media screen and (min-width: 950px) {
+    .Mobile-Navbar {
+        display: none;
+    }
+
+    .Desktop-Navbar {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .Mobile-Navbar {
+        display: flex;
+    }
+
+    .Desktop-Navbar {
+        display: none;
     }
 }
