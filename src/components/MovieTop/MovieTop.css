@@ -1,0 +1,20 @@
+.MovieTopContainer{
+    width: 100%;
+    height: 100vh;
+}
+
+.Image{
+    width: 100%;
+    height: 100%;
+}
+
+.Movie1{
+    width: 100%;
+    height: 100%;
+}
+
+.Movie1Image{
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 20px 90px 100px rgba(0, 0, 0, 0.5);
+}

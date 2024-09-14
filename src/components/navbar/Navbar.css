@@ -1,51 +1,50 @@
-.Desktop-Navbar {
+.Navbar {
     display: flex;
-    position: sticky;
+    position: fixed;
     top: 0;
     margin: 0;
     width: 100%;
     height: fit-content;
     flex-direction: row;
     justify-content: space-between;
-    box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.1);
+    background: none;
     z-index: 99999;
     padding: 0;
+    height: 105px;
 }
 
-.Desktop-Navbar {
+.Navbar > div {
     display: flex;
+    background-color: none;
     flex-direction: row;
     justify-content: space-between;
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 110px;
+    height: 100%;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.Mobile-Navbar {
-    display: none;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 110px;
+.activeNavbar {
+    background-color: var(--background);
+    box-shadow: 0 2px 4px 0 rgba(255, 255, 255, 0.1);
 }
 
-.Desktop-Desktop-Navbar-1 {
+
+.Navbar-1 {
     background-color: none;
     width: 223px;
     justify-content: center;
     align-items: center;
 }
 
-.Desktop-Navbar-1-Container {
+.Navbar-1-Container {
     display: flex;
     height: 100%;
     width: 100%;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    padding: 0;
+    padding-left: 10px;
     margin: 0;
 }
 
@@ -55,7 +54,7 @@
     margin-bottom: 0px;
 }
 
-.Left-Desktop-Navbar {
+.Left-Navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -63,7 +62,7 @@
     margin-left: 47px;
 }
 
-.Right-Desktop-Navbar {
+.Right-Navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -71,14 +70,14 @@
     margin-right: 47px;
 }
 
-.Desktop-Navbar-2 {
+.Navbar-2 {
     background-color: none;
     width: 700px;
     display: flex;
     flex-direction: row;
 }
 
-.Desktop-Navbar-2-Btn-Container {
+.Navbar-2-Btn-Container {
     display: flex;
     width: 25%;
     height: 100%;
@@ -93,9 +92,10 @@
     justify-content: center;
     align-items: center;
     height: fit-content;
+    margin-bottom: 4px;
 }
 
-.Desktop-Navbar-2-Btn-Container > .Text > a, .Desktop-Navbar-2-Btn-Container > .Text > a:hover {
+.Navbar-2-Btn-Container > .Text > a, .Navbar-2-Btn-Container > .Text > a:hover {
     display: flex;
     opacity: 0.5;
     transition: opacity 0.2s ease;
@@ -103,7 +103,7 @@
     color: white;
 }
 
-.Desktop-Navbar-2-Btn-Container > .Text > a:hover, .Desktop-Navbar-2 > .selected > .Text > a {
+.Navbar-2-Btn-Container > .Text > a:hover, .Navbar-2 > .selected > .Text > a {
     opacity: 1;
 }
 
@@ -119,14 +119,14 @@
     display: flex;
 }
 
-.Desktop-Navbar-3 {
+.Navbar-3 {
     display: flex;
     flex-direction: row;
     background-color: none;
     width: 200px;
 }
 
-.Desktop-Navbar-3 > .Desktop-Navbar-3-Container {
+.Navbar-3 > .Navbar-3-Container {
     display: flex;
     background-color: none;
     width: 50%;
@@ -135,20 +135,20 @@
     align-items: center;
 }
 
-.Desktop-Navbar-3 > .Desktop-Navbar-3-Container > div > a > img {
+.Navbar-3 > .Navbar-3-Container > div > a > img {
     width: 28px;
     height: 28px;
-    margin-top: 8px;
+    margin-top: 4px;
 }
 
-.Desktop-Navbar-4 {
+.Navbar-4 {
     background-color: none;
     justify-content: right;
-    width: 82px;
+    width: 78px;
     padding-right: 10px
 }
 
-.Desktop-Navbar-4 > .Desktop-Navbar-4-Container {
+.Navbar-4 > .Navbar-4-Container {
     display: flex;
     background-color: none;
     width: 100%;
@@ -157,59 +157,65 @@
     align-items: center;
 }
 
-.Desktop-Navbar-4 > .Desktop-Navbar-4-Container > div > a > img {
+.Navbar-4 > .Navbar-4-Container > div > a > img {
     margin-top: 8px;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 100%;
 }
 
+
 @media screen and (max-width: 1350px) {
-    .Desktop-Navbar {
+    .Navbar {
         height: 100px;
     }
 
-    .Desktop-Navbar-1 {
+    .Navbar-1 {
         width: 200px;
     }
 
-    .Desktop-Navbar-2 {
+    .Navbar-2 {
         width: 600px;
     }
 
-    .Desktop-Navbar-3 {
+    .Navbar-3 {
         width: 200px;
     }
 
-    .Desktop-Navbar-4 {
-        width: 82px;
+    .Navbar-4 {
+        width: 78px;
     }  
     
     .dot {
         width: 12px;
         height: 12px;
     }
+
+    .Navbar-4 > .Navbar-4-Container > div > a > img {
+        width: 40px;
+        height: 40px;
+    } 
 }
 
 @media screen and (max-width: 1200px) {
-    .Desktop-Navbar {
+    .Navbar {
         height: 80px;
     }
 
-    .Desktop-Navbar-1 {
+    .Navbar-1 {
         width: 150px;
     }
 
-    .Desktop-Navbar-2 {
+    .Navbar-2 {
         width: 500px;
     }
 
-    .Desktop-Navbar-3 {
+    .Navbar-3 {
         width: 150px;
     }
 
-    .Desktop-Navbar-4 {
-        width: 70px;
+    .Navbar-4 {
+        width: 62px;
     }    
 
     .dot {
@@ -223,39 +229,103 @@
         height: 25px;
     }
 
-    .Desktop-Navbar-4 > .Desktop-Navbar-4-Container > div > a > img {
-        width: 40px;
-        height: 40px;
+    .Navbar-4 > .Navbar-4-Container > div > a > img {
+        width: 35px;
+        height: 35px;
     } 
 }
 
 @media screen and (max-width: 1050px) {
-    .Left-Desktop-Navbar {
+    .Left-Navbar {
         margin-left: 25px;
     }
 
-    .Right-Desktop-Navbar {
+    .Right-Navbar {
         margin-right: 25px;
     }
 
 }
 
-@media screen and (min-width: 950px) {
-    .Mobile-Navbar {
-        display: none;
+@media screen and (max-width: 950px) {
+    .Navbar {
+        height: 70px;
     }
 
-    .Desktop-Navbar {
-        display: flex;
+    .Navbar-1 {
+        width: 140px;
     }
+
+    .Navbar-2 {
+        width: 490px;
+    }
+
+    .Navbar-3 {
+        width: 140px;
+    }
+
+    .Navbar-4 {
+        width: 60px;
+    }    
+
+    .dot {
+        width: 11px;
+        height: 11px;
+        margin-top: 40px;
+    }
+
+    .Logo-Btn {
+        margin-top: 3px;
+    }
+
+    .Logo {
+        width: 90px;
+        height: 22px;
+    }
+
+    .Navbar-4 > .Navbar-4-Container > div > a > img {
+        width: 33px;
+        height: 33px;
+    } 
 }
 
-@media screen and (max-width: 950px) {
-    .Mobile-Navbar {
-        display: flex;
+@media screen and (max-width: 900px) {
+    .Navbar {
+        height: 75px;
     }
 
-    .Desktop-Navbar {
-        display: none;
+    .Navbar-1 {
+        width: 120px;
     }
+
+    .Navbar-2 {
+        width: 470px;
+    }
+
+    .Navbar-3 {
+        width: 120px;
+    }
+
+    .Navbar-4 {
+        width: 50px;
+    }    
+
+    .dot {
+        width: 10px;
+        height: 10px;
+        margin-top: 42px;
+    }
+
+    .Logo-Btn {
+        margin-top: 3px;
+    }
+
+    .Logo {
+        width: 90px;
+        height: 22px;
+    }
+
+    .Navbar-4 > .Navbar-4-Container > div > a > img {
+        width: 30px;
+        height: 30px;
+    } 
 }
