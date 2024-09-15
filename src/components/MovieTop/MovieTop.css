@@ -1,20 +1,144 @@
-.MovieTopContainer{
+.MovieTopContainer {
     width: 100%;
     height: 100vh;
 }
 
-.Image{
+.Image {
     width: 100%;
     height: 100%;
 }
 
-.Movie1{
+.Movie {
     width: 100%;
     height: 100%;
 }
 
-.Movie1Image{
+.MovieImage {
     width: 100%;
     height: 100%;
     box-shadow: inset 0 20px 90px 100px rgba(0, 0, 0, 0.5);
+}
+
+.Movie-Info {
+    display: flex;
+    position: absolute;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    text-align: left;
+}
+
+.Movie-Info-Content {
+    max-width: 700px;
+    min-width: 700px;
+    margin-left: 11vw;
+}
+
+.Movie-Info-Top {
+    display: flex;
+    flex-direction: column;
+}
+
+.Movie-Info-Duration {
+    color: #d1d1d1;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.343px;
+    margin-bottom: 30px;
+}
+
+.Movie-Info-Top>.Movie-Info-More {
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+    color: #d1d1d1;
+    text-align: center;
+    align-items: baseline;
+    line-height: 0;
+    margin-bottom: 50px
+}
+
+.Movie-Info-Rating {
+    font-size: 24px;
+    color: #fff;
+    margin-right: 13px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Movie-Info-Decoration {
+    margin-left: 3px;
+    margin-right: 3px;
+    color: #d1d1d1;
+}
+
+.Movie-Info-Middle {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.Movie-Info-Title {
+    font-size: 66.425px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0;
+    letter-spacing: -1.329px;
+    margin-bottom: 75px;
+}
+
+.Movie-Info-Description {
+    font-size: 17px;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: -0.343px;
+    margin-bottom: 60px;
+    color: #d1d1d1;
+}
+
+.Movie-Info-Bottom {
+    display: flex;
+    flex-direction: row;
+    width: 420px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Movie-Info-Button{
+    display: flex;
+    border-radius: 60px;
+    border: none;
+    width: 190px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-style: normal;
+    flex-direction: row;
+    color: #fff;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.Watch-btn {
+    background-color: var(--primary-red);
+    box-shadow: 0 0 80px 30px rgba(99, 1, 1, 0.5);
+}
+
+.Watch-btn:hover {
+    background-color: var(--primary-red-hover);
+    box-shadow: 0 0 80px 30px rgba(133, 2, 2, 0.5)
+}
+
+.Add-list-btn {
+    background-color: var(--primary-black);
+    box-shadow: 0 0 90px 30px rgba(5, 5, 5, 0.5);
+}
+
+.Add-list-btn:hover {
+    background-color: var(--primaty-black-hover);
+    box-shadow: 0 0 90px 30px rgba(17, 17, 17, 0.5);
 }

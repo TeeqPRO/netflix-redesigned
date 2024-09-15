@@ -5,7 +5,9 @@
 
     /* Primary colors */
     --primary-black: #000;
+    --primaty-black-hover: #0c0c0c;
     --primary-red: #E50914;
+    --primary-red-hover: #ff001e;
     --primary-white: #fff;
 
     /* Secondary colors */
@@ -43,5 +45,8 @@ body {
     background-color: var(--background);
     color: white;
     font-size: 19px;
-    font-family: konkhmer sleokchher;
+}
+
+* {
+    font-family: konkhmer sleokchher;;
 }
