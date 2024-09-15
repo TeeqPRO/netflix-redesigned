@@ -1,6 +1,7 @@
 .MovieTopContainer {
     width: 100%;
     height: 100vh;
+    max-height: 1200px;
 }
 
 .Image {
@@ -25,6 +26,7 @@
     justify-content: left;
     align-items: center;
     height: 100vh;
+    max-height: 1200px;
     width: 100%;
     color: white;
     text-align: left;
