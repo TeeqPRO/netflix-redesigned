@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { assets } from '../../assets/assets';
 import './MovieTop.css';
 
 const MovieTop = () => {
+    const [descriptionWidth, setDescriptionWidth] = useState('auto');
+
+    useEffect(() => {
+        const titleElement = document.querySelector('.Movie-Info-Title');
+        const minDescriptionWidth = 200;
+
+        if (titleElement) {
+            const titleWidth = titleElement.offsetWidth;
+            const calculatedWidth = titleWidth + 210;
+
+            setDescriptionWidth(`${Math.max(calculatedWidth, minDescriptionWidth)}px`);
+        }
+    }, []);
+
     return (
         <div className="MovieTopContainer">
             <div className="Movie-Info">
@@ -31,7 +45,7 @@ const MovieTop = () => {
                             <div className="Movie-Info-Title">
                                 Alien: Romulus
                             </div>
-                            <div className="Movie-Info-Description">
+                            <div className="Movie-Info-Description" style={{ width: descriptionWidth }}>
                                 While scavenging the deep ends of a derelict space station, a group of young space colonizers come face to face with the most terrifying life form in the universe.
                             </div>
                         </div>

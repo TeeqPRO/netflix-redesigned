@@ -1,0 +1,85 @@
+.FirstSectionCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.FirstSectionCardsContainer {
+    display: flex;
+    justify-content: space-between;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    position: relative;
+    white-space: nowrap;
+}
+
+.Card {
+    flex: 0 0 255px;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ScrollButton {
+    position: absolute;
+    top: 203px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    padding: 0;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+}
+
+.ScrollButton > img {
+    width: 45px;
+    height: 65px
+}
+
+.ScrollButton.left {
+    width: 72px;
+    float: right;
+    left: 0;
+}
+
+.ScrollButton.right {
+    width: 62px;
+    float: left;
+    right: 0;
+}
+
+/* Gradient Backgrounds */
+.FirstSectionCards::before,
+.FirstSectionCards::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 80%;
+    top: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.FirstSectionCards::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(13, 12, 17, 1), rgba(13, 12, 17, 0));
+}
+
+.FirstSectionCards::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(13, 12, 17, 1), rgba(13, 12, 17, 0));
+}
+
+.FirstSectionCardsContainer::-webkit-scrollbar {
+    display: none;
+}
